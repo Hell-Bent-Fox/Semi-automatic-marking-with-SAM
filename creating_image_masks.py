@@ -159,7 +159,7 @@ def main():
             print(f"Извлечённый класс: {class_value}")
 
             # Загружаем изображение
-            image_path = os.path.join(".", filename)
+            image_path = os.path.join(images_dir, filename)
             image = cv2.imread(image_path)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)  # Преобразуем BGR в RGB
 
